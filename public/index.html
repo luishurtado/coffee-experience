@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Combia - Inspira</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="js/vendor/custom.modernizr.js"></script>
+    <script src="js/vendor/zepto.js"></script>
+    <script src="js/foundation/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <script type="text/javascript">
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '183764805134711', // App ID
+          status     : true, // check login status
+          cookie     : true, // enable cookies to allow the server to access the session
+          xfbml      : true  // parse XFBML
+        });
+      };
+
+      // Load the SDK Asynchronously
+      (function(d){
+         var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement('script'); js.id = id; js.async = true;
+         js.src = "//connect.facebook.net/en_US/all.js";
+         ref.parentNode.insertBefore(js, ref);
+       }(document));
+    </script>
+	<div class="row">
+    <div class="small-10 small-offset-1 columns">
+      <!-- Welcome Step -->
+      <div class="row step">
+        <div class="small-12 columns text-center">
+          <img src="http://res.cloudinary.com/hlm-business-inc/image/upload/c_scale,w_300/v1375757246/combia_noiba6.jpg" alt="Start Experience"/>
+          <br/>
+          <br/>
+          <button class="button round success start-experience">Iniciar Experiencia</button>
+        </div>
+      </div>
+
+      <!-- Cestería y tradición -->
+      <div class="row step" style="display:none">
+			  <div class="small-12 columns text-center">
+          <h3>Cestería y tradici&oacute;n</h3>
+          <img src="http://res.cloudinary.com/hlm-business-inc/image/upload/c_scale,w_300/v1375804133/cesteria_klh8gh.png" alt="Cestería"/>
+          <h6 class="subheader">Aprende a extraer las fibras de la naturaleza</h6>
+          <h4>¿Que te inspira esta estaci&oacute;n?</h4>
+        </div>
+        <div class="row">
+          <div class="small-6 columns panel text-center answer" data-answer="1-1">
+            Alegr&iacute;a
+          </div>
+          <div class="small-6 columns panel text-center answer" data-answer="1-2">
+            Sorpresa
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-6 columns panel text-center answer" data-answer="1-3">
+            Admiraci&oacute;n
+          </div>
+          <div class="small-6 columns panel text-center answer" data-answer="1-4">
+            Asombro
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-6 columns panel text-center answer" data-answer="1-5">
+            Serenidad
+          </div>
+          <div class="small-6 columns panel text-center answer" data-answer="1-6">
+            Confianza
+          </div>
+        </div>
+      </div>
+
+        <!-- TODO: paso 3 -->
+        <div class="row step" style="display:none">
+        	<!--Titulo-->
+			    <div class="row">
+            <div class="small-4 columns  text-center">
+              <img src="img/tasa-load1.png" style="width:98px; heith:98;"/>
+            </div>
+            <div class="small-8 columns">
+              <h2 class="subheader">Estaci&oacute;n Cata de caf&eacute;</h2>
+              <h4 class="subheader">Percibe el aroma , fragancia y sabor del caf&eacute;</h4>
+            </div>
+          </div>
+          <!--imagen-->
+          <div class="row">
+            <div class="small-12 columns">
+              <img src="img/cata.png"/>
+            </div>
+          </div>
+			<!--detalle-->
+			<div class="row" style="padding:15px;">
+				<div class="small-8 columns">
+					<h4 class="subheader">
+						¿Que te inspira esta estaci&oacute;n?
+					</h4>
+					<div class="panel callout radius">
+						<div class="row answer" style="padding:10px;" data-answer="2-1">
+							Alegr&iacute;a
+						</div>
+						<div class="row answer" style="padding:10px;" data-answer="2-2">
+							Sorpresa
+						</div>
+						<div class="row answer" style="padding:10px;" data-answer="2-3">
+							Admiraci&oacute;n
+						</div>
+						<div class="row answer" style="padding:10px;" data-answer="2-4">
+							Asombro
+						</div>
+						<div class="row answer" style="padding:10px;" data-answer="2-5">
+							Serenidad
+						</div>
+						<div class="row answer" style="padding:10px;" data-answer="2-6">
+							Confianza
+						</div>
+					</div>
+				</div>
+				<div class="small-4 columns">
+					<img src="img/tasa-load4.png" style="vertical-align: middle;" width=256 heith=256/>
+				</div>
+			</div>
+        </div>
+        <!-- TODO: paso 4 -->
+        <div class="row step" style="display:none">
+        	<!--Title-->
+			<div class="row">
+				<div class="small-4 columns  text-center">
+					<img src="img/tasa-load1.png" style="width:98px; heith:98;"/>
+				</div>
+				<div class="small-8 columns">
+					<h2 class="subheader">Estaci&oacute;n agua manantial de la vida.</h2>
+					<h4 class="subheader">El agua veh&iacute;culo de la vida y calidad.</h4>
+				</div>
+			</div>
+			<!--image-->
+			<div class="row">
+				<div class="small-12 columns">
+					<img src="img/agua.png"/>
+				</div>
+			</div>
+			<!--detall-->
+			<div class="row" style="padding:15px;">
+				<div class="small-8 columns">
+					<h4 class="subheader">
+						¿Que te inspira esta estaci&oacute;n?
+					</h4>
+					<div class="panel callout radius">
+						<div class="row answer" style="padding:10px;" data-answer="3-1">
+							Alegr&iacute;a
+						</div>
+						<div class="row answer" style="padding:10px;" data-answer="3-2">
+							Sorpresa
+						</div>
+						<div class="row answer" style="padding:10px;" data-answer="3-3">
+							Admiraci&oacute;n
+						</div>
+						<div class="row answer" style="padding:10px;" data-answer="3-4">
+							Asombro
+						</div>
+						<div class="row answer" style="padding:10px;" data-answer="3-5">
+							Serenidad
+						</div>
+						<div class="row answer" style="padding:10px;" data-answer="3-6">
+							Confianza
+						</div>
+					</div>
+				</div>
+				<div class="small-4 columns">
+					<img src="img/tasa-load6.png" style="vertical-align: middle;" width=256 heith=256/>
+        </div>
+			</div>
+        </div>
+        <!-- TODO: paso 5 -->
+        <div class="row step last-step" style="display:none">
+        	<!--Title-->
+			<div class="row">
+				<div class="small-4 columns  text-center">
+					<img src="img/tasa-load1.png" style="width:98px; heith:98;"/>
+				</div>
+				<div class="small-8 columns">
+					<h2 class="subheader">Estaci&oacute;n sabor cafetal</h2>
+					<h4 class="subheader">Sorpr&eacute;ndete con una taza de caf&eacute; &uacute;nica</h4>
+				</div>
+			</div>
+			<!--image-->
+			<div class="row">
+				<div class="small-12 columns">
+					<img src="img/estacion-final.png"/>
+				</div>
+			</div>
+			<!--detall-->
+			<div class="row" style="padding:15px;">
+				<div class="small-8 columns">
+					<h4 class="subheader">
+						¿Que te inspira esta estaci&oacute;n?
+					</h4>
+					<div class="panel callout radius">
+						<div class="row answer" style="padding:10px;" data-answer="4-1">
+							Alegr&iacute;a
+						</div>
+						<div class="row answer" style="padding:10px;" data-answer="4-2">
+							Sorpresa
+						</div>
+						<div class="row answer" style="padding:10px;" data-answer="4-3">
+							Admiraci&oacute;n
+						</div>
+						<div class="row answer" style="padding:10px;" data-answer="4-4">
+							Asombro
+						</div>
+						<div class="row answer" style="padding:10px;" data-answer="4-5">
+							Serenidad
+						</div>
+						<div class="row answer" style="padding:10px;" data-answer="4-6">
+							Confianza
+						</div>
+					</div>
+				</div>
+				<div class="small-4 columns">
+					<img src="img/tasa-load9.png" style="vertical-align: middle;" width=256 heith=256/>
+				</div>
+			</div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
